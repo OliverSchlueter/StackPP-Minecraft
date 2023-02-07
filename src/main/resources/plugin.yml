@@ -1,0 +1,9 @@
+name: StackppMcPlugin
+version: '${version}'
+main: de.oliver.stackppmcplugin.StackppMcPlugin
+api-version: 1.19
+authors: [ OliverHD ]
+description: Execute Stack++ code in Minecraft
+commands:
+  StackPP:
+    permission: StackPP.admin
