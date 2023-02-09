@@ -2,6 +2,7 @@ package de.oliver.stackppmcplugin;
 
 import de.oliver.stackpp.virtualMachine.Machine;
 import de.oliver.stackppmcplugin.commands.StackppCMD;
+import de.oliver.stackppmcplugin.stackppextensions.ExtensionRegistry;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class StackppMcPlugin extends JavaPlugin {
@@ -17,6 +18,8 @@ public final class StackppMcPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        ExtensionRegistry.registerSyscalls(machine);
+
         getCommand("StackPP").setExecutor(new StackppCMD());
     }
 
