@@ -103,6 +103,7 @@ public class StackppCMD implements CommandExecutor, TabExecutor {
         // change to custom output
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
+        System.setErr(new PrintStream(out));
 
         // run program
         StackppMcPlugin.getPlugin().getMachine().runProgram(program);
@@ -115,6 +116,7 @@ public class StackppCMD implements CommandExecutor, TabExecutor {
 
         // set standard output back
         System.setOut(System.out);
+        System.setErr(System.err);
 
         return false;
     }
