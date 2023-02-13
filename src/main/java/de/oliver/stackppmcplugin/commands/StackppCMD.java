@@ -46,7 +46,7 @@ public class StackppCMD implements CommandExecutor, TabExecutor {
         }
 
         if(args.length < 1){
-            sender.sendMessage(MiniMessage.miniMessage().deserialize("<red>/stack++ <book|file> [file path]</red>"));
+            sender.sendMessage(MiniMessage.miniMessage().deserialize("<red>/stackpp <book|file> [file path]</red>"));
             return false;
         }
 
