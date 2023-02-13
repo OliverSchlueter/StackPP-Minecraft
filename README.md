@@ -2,7 +2,7 @@
 
 Execute Stack++ code on a minecraft server.
 
-**Currently supporting Stack++ version: 1.1.3**
+**Currently supporting Stack++ version: 1.1.4**
 
 **This plugin is only supported for paper 1.19.3 servers**
 
